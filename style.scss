@@ -1,34 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-emerald: #2ecc71;
+  --primary-emerald-dark: #27ae60;
+  --primary-white: #fff;
+  --primary-black: #000;
+  --primary-sleate: #627097;
+  --rounded-sm: 0.2rem;
+  --rounded-md: 0.4rem;
+}
 
-*,*::after,*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-emerald-dark);
+  gap: 1rem;
+  flex-direction: column;
+  position: relative;
+  h1{
+        z-index: 1;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--primary-white);
+        margin-bottom: 1rem;
+  }
 }
-:root{
-    --primary-emerald: #2ecc71;
-    --primary-emerald-dark: #27ae60;
-    --primary-white: #fff;
-    --primary-black: #000;
-    --primary-sleate: #627097;
-    --rounded-sm: 0.2rem;
-    --rounded-md: 0.4rem;
-}
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: var(--primary-emerald);
-    font-family: 'Poppins', sans-serif;
-    gap: 1rem;
-}
-.btn{
+.btn-container {
+    z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  .btn {
     padding: 0.5rem 1rem;
     border-radius: var(--rounded-sm);
-    font-family:'Poppins', sans-serif ;
+    font-family: "Poppins", sans-serif;
     border: none;
     cursor: pointer;
     min-width: 7rem;
@@ -36,24 +52,35 @@ body{
     font-size: 1rem;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
-    &:hover{
-        transform: scale(1.05);
+    &:hover {
+      transform: scale(1.05);
     }
-    &.btn-primary{
-        background-color: var(--primary-emerald-dark);
-        color: var(--primary-white);
+    &.btn-primary {
+      background-color: var(--primary-emerald-dark);
+      color: var(--primary-white);
     }
-    &.btn-secondary{
-        background-color: var(--primary-white);
-        color: var(--primary-sleate);
+    &.btn-secondary {
+      background-color: var(--primary-white);
+      color: var(--primary-sleate);
     }
-   .btn-primary{
-        background-color: var(--primary-emerald-dark);
-        color: var(--primary-white);
+    .btn-primary {
+      background-color: var(--primary-emerald-dark);
+      color: var(--primary-white);
     }
-    .btn-secondary{
-        background-color: var(--primary-white);
-        color: var(--primary-black);
+    .btn-secondary {
+      background-color: var(--primary-white);
+      color: var(--primary-black);
     }
-   
+  }
+}
+.grid-bg{
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: 30px;
+    position: absolute;
+    background-image: url(https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8997f779f33b430bb22ca667d1b73ade);
+    background-repeat: repeat;
+    opacity: 0.1;
+
 }
