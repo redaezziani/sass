@@ -10,6 +10,7 @@
   --primary-emerald-dark: #27ae60;
   --primary-white: #fff;
   --primary-black: #000;
+  --primary-sleate: #627097;
   --rounded-sm: 0.2rem;
   --rounded-md: 0.4rem;
 }
@@ -27,8 +28,11 @@ body {
 .btn {
   padding: 0.5rem 1rem;
   border-radius: var(--rounded-sm);
+  font-family: "Poppins", sans-serif;
   border: none;
   cursor: pointer;
+  min-width: 7rem;
+  min-height: 2.5rem;
   font-size: 1rem;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
@@ -42,7 +46,7 @@ body {
 }
 .btn.btn-secondary {
   background-color: var(--primary-white);
-  color: var(--primary-black);
+  color: var(--primary-sleate);
 }
 .btn .btn-primary {
   background-color: var(--primary-emerald-dark);
