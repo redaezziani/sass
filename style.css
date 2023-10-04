@@ -1,0 +1,16 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-emerald: #2ecc71;
+  --primary-emerald-dark: #27ae60;
+  --primary-white: #fff;
+  --primary-black: #000;
+  --rounded-sm: 0.2rem;
+  --rounded-md: 0.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
